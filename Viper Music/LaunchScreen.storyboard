@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s74-75-xoj">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="86a-QG-dd6">
+            <objects>
+                <viewController id="s74-75-xoj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v22-HK-Qhb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="U4G-ia-WNH">
+                                <rect key="frame" x="87.666666666666686" y="311" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IZs-wn-Z0t"/>
+                                    <constraint firstAttribute="width" secondItem="U4G-ia-WNH" secondAttribute="height" multiplier="1:1" id="UvS-qA-p48"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIPER MUSIC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlm-T9-oQU">
+                                <rect key="frame" x="124" y="501" width="127" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.70196078429999997" green="0.1176470588" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nlm-T9-oQU" firstAttribute="centerX" secondItem="U4G-ia-WNH" secondAttribute="centerX" id="TMU-B5-bxS"/>
+                            <constraint firstItem="Nlm-T9-oQU" firstAttribute="top" secondItem="U4G-ia-WNH" secondAttribute="bottom" constant="-10" id="eSw-a8-3dz"/>
+                            <constraint firstItem="U4G-ia-WNH" firstAttribute="centerY" secondItem="qJj-si-kXD" secondAttribute="centerY" id="jCo-3T-Hr1"/>
+                            <constraint firstItem="U4G-ia-WNH" firstAttribute="centerX" secondItem="qJj-si-kXD" secondAttribute="centerX" id="wWZ-6s-abE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qJj-si-kXD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEC-hG-NBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-39"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images" width="202" height="164"/>
+    </resources>
+</document>
