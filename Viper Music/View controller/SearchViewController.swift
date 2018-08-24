@@ -15,7 +15,7 @@ var currentTrack: Int = 0
 var downloadedTracks = [Int]()
 var allTracks = [Track]()
 
-class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
 
     //MARK:- IBOutlets
     
@@ -48,6 +48,8 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         showTracksTableView.backgroundColor = #colorLiteral(red: 0.03921568627, green: 0.1333333333, blue: 0.262745098, alpha: 1)
         activityIndicatorView.isHidden = true
+        
+        searchBar.delegate = self
         setUpSearchBar()
         
         musicPlayerViewInitialHeight = musicPlayerViewHeight.constant
@@ -129,6 +131,12 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
             self.musicPlayerViewHeight.constant = self.musicPlayerViewInitialHeight
             self.view.layoutIfNeeded()
         }
+    }
+    
+    //MARK:- UISearchBarDelegate
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
     
     //MARK:- IBActions
